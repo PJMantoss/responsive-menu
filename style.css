@@ -108,5 +108,5 @@ a.active, a:hover {
 section {
     background: url(bg.jpg) no-repeat;
     background-size: cover;
-    height: calc(100vh - 80px);
+    height: 100vh;
 }
