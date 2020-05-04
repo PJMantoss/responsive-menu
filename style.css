@@ -43,3 +43,17 @@ a.active, a:hover {
     background: #1b9bff;
     transition: .5s;
 }
+
+.checkbtn {
+    display: none;
+    float: right;
+    color: white;
+    font-size: 30px;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+}
+
+#check {
+    display: none;
+}
