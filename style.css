@@ -123,7 +123,6 @@ nav ul ul {
     position: absolute;
     visibility: hidden;
     top: 60px;
-    left: 0;
     margin: 20px 0 0 0;
     z-index: 1;
     opacity: 0;
@@ -138,13 +137,15 @@ nav ul li:hover > ul {
 }
 
 nav ul ul li {
-    width: 170px;
     float: none;
     display: block;
+    border: 0;
 }
 
 nav ul ul ul {
-    s
+    top: 0;
+    left: 115px;
+    margin: 0 0 0 20px;
 }
 
 /*
