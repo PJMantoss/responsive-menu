@@ -14,9 +14,12 @@ nav {
     height: 80px;
 }
 
-nav:after {
+nav:after, nav:after {
     content: "";
     display: table;
+}
+
+nav:after {
     clear: both;
 }
 
@@ -118,6 +121,36 @@ a.active, a:hover {
 
 nav ul ul {
     display: none;
+}
+
+
+nav ul ul li {
+    position: relative;
+    width: 170px;
+    float: none;
+    display: list-item;
+}
+
+nav ul ul ul li {
+    position: relative;
+    top: -60px;
+    left: 170px;
+}
+
+nav ul li:hover > ul {
+    display: inherit;
+}
+
+li > a:after {
+    content: " +";
+}
+
+li > a:only-child:after {
+    content: "";
+}
+
+nav ul li ul li:hover {
+    background: black;
 }
 
 #check2, #check3 {
