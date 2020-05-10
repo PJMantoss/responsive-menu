@@ -14,15 +14,6 @@ nav {
     height: 80px;
 }
 
-nav:after, nav:after {
-    content: "";
-    display: table;
-}
-
-nav:after {
-    clear: both;
-}
-
 label.logo {
     color: white;
     font-family: 'Lilita One', cursive;
@@ -118,18 +109,45 @@ a.active, a:hover {
 }
 
 /*Styling for Dropdown and submenu*/
-
-nav ul ul {
-    display: none;
+nav ul ul:before, 
+nav ul ul:after {
+    content: "";
+    display: table;
 }
 
+nav ul ul:after {
+    clear: both;
+}
+
+nav ul ul {
+    position: absolute;
+    visibility: hidden;
+    top: 60px;
+    left: 0;
+    margin: 20px 0 0 0;
+    z-index: 1;
+    opacity: 0;
+    background: black;
+    transition: all .3s ease-in-out;
+}
+
+nav ul li:hover > ul {
+    opacity: 1;
+    visibility: visible;
+    margin: 0;
+}
 
 nav ul ul li {
-    position: relative;
     width: 170px;
     float: none;
     display: block;
 }
+
+nav ul ul ul {
+    s
+}
+
+/*
 
 nav ul ul ul li {
     position: relative;
@@ -137,9 +155,10 @@ nav ul ul ul li {
     left: 170px;
 }
 
-nav ul li:hover > ul {
-    display: block;
+nav ul li ul li:hover {
+    background: black;
 }
+*/
 
 li > a:after {
     content: " +";
@@ -147,10 +166,6 @@ li > a:after {
 
 li > a:only-child:after {
     content: "";
-}
-
-nav ul li ul li:hover {
-    background: black;
 }
 
 
