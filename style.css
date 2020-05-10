@@ -116,6 +116,16 @@ a.active, a:hover {
 
 /*Styling for Dropdown and submenu*/
 
+nav ul ul {
+    display: none;
+}
+
+#check2, #check3 {
+    display: none;
+    position: absolute;
+    top: 60px;
+}
+
 
 section {
     background: url(bg.jpg) repeat;
