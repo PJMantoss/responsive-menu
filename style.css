@@ -114,6 +114,9 @@ a.active, a:hover {
     }
 }
 
+/*Styling for Dropdown and submenu*/
+
+
 section {
     background: url(bg.jpg) repeat;
     background-size: contain;
