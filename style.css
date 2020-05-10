@@ -148,19 +148,6 @@ nav ul ul ul {
     margin: 0 0 0 20px;
 }
 
-/*
-
-nav ul ul ul li {
-    position: relative;
-    top: -60px;
-    left: 170px;
-}
-
-nav ul li ul li:hover {
-    background: black;
-}
-*/
-
 li > a:after {
     content: " +";
 }
